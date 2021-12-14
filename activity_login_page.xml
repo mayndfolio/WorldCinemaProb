@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:content=".LoginPage"
+    android:background="#150D0B" >
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginTop="65sp"
+        android:src="@drawable/icon_load_screen"
+        />
+
+    <TextView
+         android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text="WorldCinema"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appLogo"
+        android:textSize="65sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#FF7C88"
+        />
+
+    <EditText
+        android:id="@+id/loginPageEditTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/appName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/login_page_edit_text"
+        android:hint="E-mail"
+        android:textColorHint="#AFAFAF" />
+
+    <EditText
+        android:id="@+id/loginPageEditTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginPageEditTextEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_page_edit_text"
+        android:hint="Пароль"
+        android:textColorHint="#AFAFAF" />
+
+    <Button
+        android:id="@+id/loginPageBtnSingIn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loginPageEditTextPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/btn"
+        android:onClick="getSingIn"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/loginPageBtnSingUp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loginPageBtnSingIn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_page_edit_text"
+        android:onClick="getRegistration"
+        android:text="Регистрация"
+        android:textAllCaps="false"
+        android:textColor="#FF7C88"
+        android:textSize="15sp" />
+
+</RelativeLayout>
