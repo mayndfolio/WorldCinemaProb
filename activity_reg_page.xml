@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegPage"
+    android:background="#150D0B">
+
+    <TextView
+        android:id="@+id/loginPageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-black"
+        android:text="WorldCinema"
+        android:textColor="#FF7C88"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/loginPageEditTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginPageText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_page_edit_text"
+        android:hint="E-mail"
+        android:textColorHint="#AFAFAF" />
+
+    <EditText
+        android:id="@+id/loginPageEditTextFirstName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginPageEditTextEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_page_edit_text"
+        android:hint="Имя"
+        android:textColorHint="#AFAFAF" />
+
+    <EditText
+        android:id="@+id/loginPageEditTextLastName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginPageEditTextFirstName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_page_edit_text"
+        android:hint="Фамилия"
+        android:textColorHint="#AFAFAF" />
+
+    <EditText
+        android:id="@+id/loginPageEditTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginPageEditTextLastName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_page_edit_text"
+        android:hint="Пароль"
+        android:textColorHint="#AFAFAF" />
+
+    <EditText
+        android:id="@+id/loginPageEditTextPasswordConfim"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginPageEditTextPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_page_edit_text"
+        android:hint="Повтор пароля"
+        android:textColorHint="#AFAFAF" />
+
+    <Button
+        android:id="@+id/loginPageBtnSingUp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loginPageEditTextPasswordConfim"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_page_edit_text"
+        android:text="Регистрация"
+        android:onClick="registration"
+        android:textAllCaps="false"
+        android:textColor="#FF7C88"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/loginPageBtnBack"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/loginPageBtnSingUp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_page_edit_text"
+        android:onClick="back"
+        android:text="Назад"
+        android:textAllCaps="false"
+        android:textColor="#FF7C88"
+        android:textSize="15sp" />
+
+</RelativeLayout>
